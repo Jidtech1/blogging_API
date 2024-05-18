@@ -6,8 +6,6 @@ const login = require('./controllers/login')
 const blog = require('./route/blog')
 
 const app = express()
-
-console.log(CONFIG.DATABASE_CONNECT_STRING)
 // connect to db
 require('./middleware/db')(CONFIG.DATABASE_CONNECT_STRING)
 
